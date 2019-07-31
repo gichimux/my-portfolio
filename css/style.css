@@ -32,6 +32,7 @@
 	General Styles
 =======================================================*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
 body, html{
 	height:100%;
 	width:100%;
@@ -52,7 +53,7 @@ body{
 .btn-custom,
 .menu-items > li > a,
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Roboto Mono', sans-serif;
+	font-family: 'Baloo Chettan', cursive;
 }
 .color{
 	color:#303F9F;
@@ -91,6 +92,9 @@ body.border-dark .menu-btn > .lines > span{
 	right:0;
 	height:100%;
 	width:0;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	border-left: 5px dotted red;
 	-webkit-transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	transition:width .6s cubic-bezier(.785,.135,.15,.86);
@@ -98,11 +102,11 @@ body.border-dark .menu-btn > .lines > span{
 }
 .menu:hover,
 .menu-btn:hover + .menu{
-	width:300px;
+	width:250px;
 }
 .menu > .inner{
 	height:100%;
-	width:300px;
+	width:250px;
 	position:absolute;
 	right:0;
 	top:0;
@@ -150,7 +154,7 @@ body.border-dark .menu-btn > .lines > span{
 	transition:border-color 2.5s cubic-bezier(.785,.135,.15,.86);
 }
 body.border-dark .main-content > .page-border{
-	border-color:#303F9F;
+	border-color:#000;
 }
 .main-content > .border-top,
 .main-content > .border-bottom{
