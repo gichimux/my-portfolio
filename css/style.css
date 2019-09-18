@@ -31,7 +31,7 @@
 /*=======================================================
 	General Styles
 =======================================================*/
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
 body, html{
 	height:100%;
@@ -92,9 +92,9 @@ body.border-dark .menu-btn > .lines > span{
 	right:0;
 	height:100%;
 	width:0;
-	border-bottom-left-radius: 20px;
-	border-top-left-radius: 20px;
-	border-left: 5px solid #0cf;
+	/* border-bottom-left-radius: 20px; */
+	/* border-top-left-radius: 20px; */
+	border-left: 2px dotted #62FE67;
 	-webkit-transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	transition:width .6s cubic-bezier(.785,.135,.15,.86);
@@ -195,6 +195,46 @@ body.border-dark .main-content > .page-border{
 	overflow:hidden;
 	box-shadow: 0 0 0 10px #FFF;
 }
+
+#img{
+	
+	height: 200px;
+	width: 150px;
+	margin:auto;
+	border-radius: 50%;
+}
+#image1{
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px 0px #444;
+}
+
+/* ######## SOCIAL MEDIA ICONS ########*/
+
+.social-icons{
+	padding: 20px;
+}
+
+.social-icons i {
+	font-size:20px; 
+	border-radius: 50%;
+	 border: .2px solid #000; 
+	 background-color: #fff; 
+	 padding: 10px;
+	 margin-left: 10px;	
+	 
+}
+
+.social-icons a {
+	text-decoration: none;
+
+}
+
+.social-icons i:hover {
+ font-size: 22px;
+ padding: 12px;
+  } 
+
+/* ############ END OF SOCIAL ICONS############ */
 .section{
 	position:absolute;
 	top:0;
@@ -253,7 +293,7 @@ body.border-dark .main-content:after{
 	left:0;
 	height:100%;
 	width:100%;
-	background:#303F9F;
+	background:linear-gradient(60deg,  #041BFE, #00C3FC);
 	opacity:.8;
 	z-index:-1;
 }
@@ -1418,3 +1458,4 @@ body.loaded #preloader .loader{
 		padding-top:0;
 	}
 }
+
